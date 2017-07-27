@@ -705,7 +705,7 @@ function emit_libvirt_XML() {
 
 function echo_environment() {
 	FAME_FAM=${FAME_FAM:-"NEEDS TO BE SET!"}
-	echo "http_proxy=$http_proxy"
+	echo "http_proxy=${http_proxy:-}"
 	env | grep FAME_ | sort
 }
 
